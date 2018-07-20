@@ -6,7 +6,7 @@
 
 #How to find prime numbers
 #first, divide the number by 2 to see if we get a whole number
-  #false if we do get a whole number, it can't be a prime number.
+#false if we do get a whole number, it can't be a prime number.
 #if we don't get a whole number,
 #try dividing it by prime numbers: 3, 5, 7, 11
 def prime?(i)
@@ -16,4 +16,5 @@ def prime?(i)
     #(range_of_numbers[i] / 1) == range_of_numbers[i] || 1
     range_of_numbers = (2...i).to_a
     range_of_numbers.all? {|number| i % number != 0}
+  end
 end
